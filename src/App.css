@@ -1,0 +1,149 @@
+/* App.css */
+.sidebar {
+  width: 250px; /* Adjust width as needed */
+  height: 90vh; /* Full height */
+  position: fixed;
+  top: 0 ;
+  left: 0;
+  background-color: #343a40; /* Dark background color for sidebar */
+  padding: 1rem; /* Padding */
+  border-right: 1px solid #dee2e6; /* Light border color */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+  color: #000000; /* Text color */
+  font-family: "Arial", sans-serif; /* Font styling */
+}
+
+.sidebar .user-info {
+  font-size: 1.25rem; /* Larger font size for user info */
+  font-weight: bold; /* Bold text */
+  width: 100%; /* Ensure it takes full width for alignment */
+  color: #000000; /* White text color */
+}
+
+.sidebar .main-menu {
+  flex-grow: 1; /* Allows the menu to take up remaining space */
+  width: 100%; /* Ensure it takes full width for alignment */
+  color: #000000; /* White text color */
+}
+
+.sidebar .main-menu h5 {
+  color: #000000; /* Light color for section headers */
+  margin-bottom: 1rem; /* Space below the header */
+}
+
+.sidebar .nav-link,
+.sidebar .navbar-brand {
+  color: #000000; /* White text color */
+  display: flex; /* Flex display for alignment */
+  align-items: center; /* Center items vertically */
+  width: 100%; /* Ensure links take full width */
+  font-size: 1rem; /* Font size for links */
+  text-decoration: none; /* Remove underline */
+  padding: 0.5rem 1rem; /* Padding for links */
+}
+
+.sidebar .nav-link:hover {
+  color: #ffffff; /* Hover color */
+  background-color: #495057; /* Darker background on hover */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.sidebar .dropdown-menu {
+  position: static; /* Ensure it doesn't overflow */
+  width: 100%; /* Full width to match sidebar */
+  left: 0; /* Align with the sidebar */
+  border: 1px solid #dee2e6; /* Border for dropdown */
+  /* background-color: #495057;  */
+  color: #000000; /* White text color for dropdown items */
+}
+
+.sidebar .dropdown-item {
+  color: #000000; /* White text color for dropdown items */
+}
+
+.sidebar .dropdown-item:hover {
+  background-color: #000000; /* Highlight color on hover */
+  color: #ffffff; /* White text color on hover */
+}
+
+.sidebar .support-section {
+  width: 100%; /* Ensure it takes full width for alignment */
+  padding-top: 1rem; /* Space above support section */
+  border-top: 1px solid #dee2e6; /* Border on top of support section */
+}
+
+.sidebar .support-section h5 {
+  color: #000000; /* Light color for section header */
+  margin-bottom: 1rem; /* Space below the header */
+}
+
+/* Navbar CSS */
+.top-navbar {
+  /* width: calc(100% - 250px);  */
+  position: fixed;
+  top: 0;
+  left: 10px;
+  z-index: 1000;
+  padding: 0.5rem 1rem;
+  background-color: #ffffff; /* Light background color */
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  flex-grow: 1;
+  margin-left: 90px;
+}
+
+/* OrderBook CSS */
+
+/* App.css */
+
+.order-book-container {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f8f9fa; /* Light grey background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.order-book-container h2 {
+  margin-bottom: 20px;
+  color: #343a40; /* Dark color for the header */
+}
+
+.order-form {
+  margin-bottom: 20px;
+}
+
+.order-form .form-group {
+  margin-bottom: 15px;
+}
+
+.order-form .button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.order-book-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.order-book-table th,
+.order-book-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.order-book-table thead {
+  background-color: #343a40; /* Dark background for the header */
+  color: #ffffff; /* White text color */
+}
+
+.order-book-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light grey background for even rows */
+}

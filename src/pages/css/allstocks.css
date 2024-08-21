@@ -1,0 +1,28 @@
+.scrollable-cards {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 1rem;
+  max-width: 80vw; /* Limit the width to 100vw */
+}
+
+.scrollable-cards .card {
+  margin-right: 1rem;
+  flex: 0 0 auto;
+}
+
+.scroll-button {
+  position: fixed;
+  right: 1rem;
+  top: 6rem;
+  height: 3rem;
+  background-color: rgb(0 0 0 / 38%);
+  border-radius: 50%;
+  border: none;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
